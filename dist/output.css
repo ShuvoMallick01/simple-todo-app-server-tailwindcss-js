@@ -585,7 +585,8 @@ video {
   font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity));
-  transition-duration: 150ms;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
 .todo-btn:hover {
@@ -603,6 +604,8 @@ video {
   padding-top: 0.125rem;
   padding-bottom: 0.125rem;
   font-weight: 600;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
 .btn-all {
@@ -667,7 +670,7 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.todo-status {
+.todo-status-incomplete {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -728,9 +731,9 @@ video {
   margin-bottom: 0.5rem;
 }
 
-.me-4 {
-  -webkit-margin-end: 1rem;
-          margin-inline-end: 1rem;
+.me-2 {
+  -webkit-margin-end: 0.5rem;
+          margin-inline-end: 0.5rem;
 }
 
 .mt-5 {
@@ -743,6 +746,10 @@ video {
 
 .flex {
   display: flex;
+}
+
+.hidden {
+  display: none;
 }
 
 .max-w-2xl {
