@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .todo-input {
+    @apply block w-full py-2 px-3 rounded-xl focus:outline-none focus:ring-primary border shadow-sm border-slate-300 placeholder-slate-400 text-gray-600 font-semibold;
+  }
+
+  .todo-btn {
+    @apply p-2 mt-3 bg-secondary w-full rounded-xl font-semibold text-gray-700 text-lg hover:bg-primary duration-150 hover:text-white;
+  }
+
+  .btn {
+    @apply px-6 py-0.5 rounded-xl border font-semibold;
+  }
+
+  .btn-all {
+    @apply border-primary  text-primary hover:bg-primary hover:text-white;
+  }
+
+  .btn-incomplete {
+    @apply border-violet-500  text-violet-500 hover:bg-violet-500 hover:text-white;
+  }
+
+  .btn-complete {
+    @apply border-green-700  text-green-700 hover:bg-green-700 hover:text-white;
+  }
+
+  .todo {
+    @apply w-full border shadow-sm flex content-center justify-between items-center rounded-xl py-2 px-5 overflow-hidden relative cursor-pointer;
+  }
+
+  .todo-status {
+    @apply bg-violet-500 w-1.5 h-full absolute top-0 left-0;
+  }
+
+  .icon {
+    @apply text-lg p-1 font-semibold hover:font-semibold hover:text-xl w-8 ease-out duration-300;
+  }
+
+  .icon-red {
+    @apply text-red-600 hover:text-red-700 w-8;
+  }
+
+  .icon-green {
+    @apply text-green-600 hover:text-green-700 w-8;
+  }
+}

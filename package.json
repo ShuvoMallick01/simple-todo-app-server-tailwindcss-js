@@ -1,0 +1,14 @@
+{
+  "name": "17-simple-todo-app-server-tailwindcss",
+  "version": "1.0.0",
+  "description": "todo List",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/css/input.css -o ./dist/output.css --watch"
+  },
+  "author": "Shuvo Mallick",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
