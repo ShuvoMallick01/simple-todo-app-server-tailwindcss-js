@@ -1,34 +1,10 @@
 {
   "todos": [
     {
-      "title": "learn React",
-      "complete": true,
-      "createAt": 1689612204289,
-      "id": 1
-    },
-    {
-      "title": "learn Javascript",
+      "title": "learn Javascript1",
       "complete": true,
       "createAt": 1689612204289,
       "id": 2
-    },
-    {
-      "title": "learn Vue",
-      "complete": false,
-      "createAt": 1689612204289,
-      "id": 3
-    },
-    {
-      "title": "learn HTML CSS",
-      "complete": true,
-      "createAt": 1689612204289,
-      "id": 4
-    },
-    {
-      "title": "learn SASS",
-      "complete": false,
-      "createAt": 1689612204289,
-      "id": 5
     }
   ]
 }
