@@ -138,6 +138,25 @@ todoformEl.addEventListener("submit", (e) => {
   }
 });
 
+// FILTER FUNCTIONALITY
+allActionBtnEl.addEventListener("click", async (e) => {
+  // const data = await getRequest();
+  renderTodoList(global.todoList);
+});
+
+incompleteActionBtnEl.addEventListener("click", async (e) => {
+  const response = await fetch(`${global.apiUrl}?complete=false`);
+  const data = await response.json();
+
+  renderTodoList(data);
+});
+
+completeActionBtnEl.addEventListener("click", async (e) => {
+  const response = await fetch(`${global.apiUrl}?complete=true`);
+  const data = await response.json();
+  renderTodoList(data);
+});
+
 // PAGE LOAD
 document.addEventListener("DOMContentLoaded", async (e) => {
   try {
